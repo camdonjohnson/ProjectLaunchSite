@@ -1,3 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.exo-2-head {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.cabin-center {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.cabin-center {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+.cabin-small {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.exo-2-underhead {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 body {
     margin-left: auto;
     margin-right: auto;
@@ -9,45 +53,187 @@ h1 {
 
 header {
     position: absolute;
+    background-color: aliceblue;
     margin: 0;
     padding: 0;
     left: 0;
     top: 0;
     width: 100%;
     height: 10%;
-    background-color: grey;
     display: flex;
     justify-content: center;
+}
+
+#bg {
+    position: absolute;
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    background-image: url(clayton-lincoln-yWfr7f-3Ryg-unsplash.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header #right {
     display: flex;
     flex-wrap: wrap;
-    gap: 10%;
+    gap: 5%;
     position: sticky;
     left: 1277px;
-    width: 150px;
+    width: 330px;
     height: 100%;
     justify-content: center;
     align-content: center;
 }
 
-header #right a {
+header #left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    position: sticky;
+    right: 1277px;
+    width: 250px;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
 
+header #left strong {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    top: 10%;
+    justify-content: center;
+    left: 25%;
+    color: rgb(255, 189, 67);
+}
+
+header #left h1 {
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    top: 25%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #left i {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    top: 5%;
+    align-items: center;
+    justify-content: center;
+    left: 5%;
+    background-color: orange;
+    border-radius: 100px;
+    color: rgb(103, 79, 0);
+}
+
+.tow {
+    background-image: url(tow.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header strong {
+    height: 100%;
+    position: absolute;
+    font-size: 55px;
+    justify-self: center;
+    align-self: center;
 }
 
 header #right a button {
-    width: 40px;
-    height: 40px;
+    position: sticky;
+    width: 100%;
+    height: 100%;
     border: 0;
 }
 
+header #right a button i {
+    font-size: 30px;
+    align-self: center;
+}
+
 #right #home {
-    background-color: rgb(255, 80, 80);
+    background-color: orange;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
 }
 #right #about {
-    background-color: rgb(255, 200, 80);
+    background: none;
+}
+#right #contact {
+    background: none;
+}
+#right #linked {
+    font-size: 10px;
+    background: none;
+    color: rgb(20, 89, 200);
 }
 #right #github {
-    background-color: rgb(162, 255, 80);
+    background: none;
+}
+
+#center {
+    position: absolute;
+    top:10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+#center #left h1 {
+    color: orange;
+    bottom: 40%;
+    font-size: 60px;
+}
+
+#center #right {
+    background: none;
+    width: 500px;
+    height: 550px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#center #right h1 {
+    color: rgb(255, 255, 255);
+    bottom: 40%;
+    font-size: 80px;
+    position: sticky;
+    border-bottom: 2px solid gray;
+    
+}
+
+#center #right p {
+    text-align: center;
+    position: sticky;
+    color: white;
+    bottom: 35%;
+    font-size: 20px;
 }
